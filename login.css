@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    background-image: linear-gradient(146deg, #000000ca 10%, #00000026 75%, #000000be 100%), url("/assets/bgcimg.jpg");
+    background-repeat: no-repeat;
+    aspect-ratio: 40/21;
+    background-position: center center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+nav {
+    width: 80%;
+    margin: auto;
+}
+
+.login-container {
+    padding: 2em;
+    height: auto;
+    width: 35%;
+    margin: 4rem auto;
+    background-color: rgba(0, 0, 0, 0.676);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+}
+h1{
+    font-weight: 700;
+}
+.login-container > *{
+    width: 100%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
+}
+form > *{
+    font-size: 1.2rem;
+    padding: 12px 16px;
+
+}
+input{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    border: 1px solid white;
+}
+button{
+    background-color: red;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    font-weight: 650;
+    cursor: pointer;
+}
+.code{
+    background-color: rgba(109, 109, 109, 0.676);
+    border-radius: 5px;
+    padding: 12px 16px;
+    text-align: center;
+    font-weight: 650;
+}
+.or, .forgot{
+    text-align: center;
+    color: white;
+}
+.forgot:hover{
+    color: blue;
+}
+p a{
+    color: blue;
+}
+
+footer {
+    width: 80%;
+    margin: 3rem auto;
+}
+
+li a {
+    color: rgb(145, 145, 145);
+}
+
+li {
+    list-style: none;
+    width: 200px;
+    padding: 1em;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .login-container {
+        width: 95%;
+    }
+    nav{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 780px) {
+    .login-container {
+        width: 65%;
+    }
+}
+@media only screen and (min-width: 781px) and (max-width: 900px) {
+    .login-container {
+        width: 55%;
+    }
+}

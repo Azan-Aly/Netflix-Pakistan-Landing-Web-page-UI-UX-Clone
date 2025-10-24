@@ -1,0 +1,16 @@
+<!-- SVG: full-width, thin, tapered Netflix-red arc that touches the top -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none" width="100%"
+            height="60" style="display:block;">
+            <defs>
+                <linearGradient id="taper" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#E50914" stop-opacity="0" />
+                    <stop offset="10%" stop-color="#E50914" stop-opacity="1" />
+                    <stop offset="90%" stop-color="#E50914" stop-opacity="1" />
+                    <stop offset="100%" stop-color="#E50914" stop-opacity="0" />
+                </linearGradient>
+            </defs>
+
+            <!-- topmost control points at y=0 so no empty space above -->
+            <path d="M0,54 C360,0 1080,0 1440,54" stroke="url(#taper)" stroke-width="3" stroke-linecap="round"
+                fill="transparent" />
+        </svg>

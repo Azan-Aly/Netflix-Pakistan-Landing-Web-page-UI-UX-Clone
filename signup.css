@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+}
+nav button a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+button a:hover{
+    text-decoration: underline;
+    
+}
+button{
+    background-color: white;
+    border-style: none;
+    padding: 12px 16px;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+    min-height: 70vh;
+    text-align: center;
+}
+.svgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.Finish{
+    font-weight: bold;
+    font-size: xx-large;
+}
+.link{
+    background-color: #e50914;
+    color: white;
+    width: 30%;
+    padding: 1em 2em;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+footer {
+    width: 80%;
+    height: 20vh;
+    margin: 1rem auto;
+    font-size: small;
+}
+
+li a {
+    color: rgb(145, 145, 145);
+}
+
+li {
+    list-style: none;
+    width: 200px;
+    padding: .5em;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 480px) {
+    .svgs img{
+        height: 70px;
+    }
+    .Finish{
+        font-size: x-large;
+    }
+    .link{
+        width: 60%;
+    }
+    .msg{
+        padding: 0 12px;
+    }
+    main{
+        min-height: 100%;
+        gap: 1em;
+    }
+    nav img {
+        height: 12vh;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 780px) {
+    .svgs img{
+        height: 80px;
+    }
+    .Finish{
+        font-size: xx-large;
+    }
+    .link{
+        width: 50%;
+    }
+    .msg{
+        padding: 0 18px;
+    }
+    main{
+        min-height: 85%;
+        gap: 1.5em;
+    }
+}
+@media only screen and (min-width: 781px) and (max-width: 900px) {
+    .svgs img{
+        height: 90px;
+    }
+    .Finish{
+        font-size: xx-large;
+    }
+    .link{
+        width: 40%;
+    }
+    .msg{
+        padding: 0 12px;
+    }
+    main{
+        min-height: 75%;
+        gap: 2em;
+    }
+}
